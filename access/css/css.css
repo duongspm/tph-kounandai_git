@@ -269,10 +269,12 @@ html{
 }
 .places__box:nth-child(3n){
     margin-right: 0;
-    background: red;
 }
 .places-box-img{
     position: relative;
+}
+.places-box-img img{
+    width: 100%;
 }
 .placesBox-img-title{
     text-transform: uppercase;
@@ -280,6 +282,7 @@ html{
     position: absolute;
     left: 20px;
     bottom: 0;
+    color: #ffffff;
 }
 .places-box-img .photo__capIn{
     bottom: -15px;
@@ -310,5 +313,34 @@ html{
 
 .scale-img:hover>img {
     transform: scale(1.1, 1.1);
+}
+.bg--lightblue{
+    background: #8cccc2;
+}
+.places__block{
+    margin-top: 60px;
+    padding: 75px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.places__block .left{
+    width: 47%;
+}
+.places__block .left .image{
+    margin-top: 40px;
+}
+.places__block .right{
+    width: 55%;
+}
+.places__block .right .image{
+    position: relative;
+    transform: translateX(70px);
+}
+.places__block .image{
+    position: relative;
+}
+.places__block .image .photo__capIn {
+    bottom: 12px;
+    left: 20px;
 }
 /* Places */
