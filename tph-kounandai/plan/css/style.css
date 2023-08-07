@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /* Plan */
+.bg--lightblue{
+    background: #8cccc2;
+}
 .photo__capIn[data-color='sdw-wh2']{
     color: #ffffff;    
     text-shadow: #000000 2px 0 0, #000000 1.75517px 0.958851px 0, #000000 1.0806px 1.68294px 0, #000000 0.141474px 1.99499px 0, #000000 -0.832294px 1.81859px 0, #000000 -1.60229px 1.19694px 0, #000000 -1.97998px 0.28224px 0, #000000 -1.87291px -0.701566px 0, #000000 -1.30729px -1.6136px 0, #000000 -0.421592px -1.95506px 0, #000000 0.567324px -1.91785px 0, #000000 1.41734px -1.41108px 0, #000000 1.92034px -0.558831px 0;
@@ -13,6 +16,7 @@
 .stogare{
     border: 2px solid #2fc4a8;
     padding: 49px 49px 35px 49px;
+    margin: 150px 0;
 }
 .stogare__title{
     text-transform: uppercase;
@@ -47,8 +51,6 @@
     padding: 0;
     position: relative;
 }
-
-
 .group__img figure img{
     width: 100%;
 }
@@ -91,13 +93,67 @@
 }
 .viewmore__icon{
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 260px;
     height: 20px;
+    transition: 0.2s linear;
+}
+.btn__viewmore:hover .viewmore__icon{
+    transform: translate(-40%,-50%);
+    opacity: 0.5;
 }
 /* <!-- UNDERFLOOR STORAGE --> */
+
+/* <!-- EQUIPMENT --> */
+.equipment .mTit[data-atariPink]::before{
+    left: unset;
+    right: 0;
+}
+.equipment{
+    padding: 70px 0 60px 0;
+}
+.equipment__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.equipment__img{
+    position: relative;
+}
+.equipment__img .photo__capIn{
+    right: unset;
+    left: 5px;
+}
+.equipment__content{
+    margin-top: 10px;
+    line-height: 1.6;
+}
+.equipment-item-title{
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+.equipment-item-desc{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.fz--10{
+    font-size: 10px;
+}
+.text--indent{
+    padding-left: 1em;
+    text-indent: -1em;
+}
+.equipment__item{
+    width: 22.99%;
+    margin: 0 2.67% 5% 0;
+}
+.equipment__item:nth-of-type(4n){
+    margin-right: 0;
+}
+/* <!-- EQUIPMENT --> */
+
 
 @media screen and (min-width: 768px) {
 }
