@@ -2,7 +2,7 @@
 /* Access */
 
 /* mv */
-.line--img{
+.hero__line{
     position: absolute;
     bottom: -15%;
     left: 0;
@@ -180,9 +180,7 @@
     flex-wrap: wrap;
     position: relative;
 }
-.group__img .photo__capIn{
-    bottom: -25px;
-}
+
 .img__item{
     width: 33.33%;
 }
@@ -244,9 +242,7 @@
     bottom: 0;
     line-height: 1;
 }
-.places-box-img .photo__capIn{
-    bottom: -15px;
-}
+
 .places-box-title{
     padding: 8px 0;
     text-align: center;

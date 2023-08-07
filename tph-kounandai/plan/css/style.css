@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* Plan */
+.photo__capIn[data-color='sdw-wh2']{
+    color: #ffffff;    
+    text-shadow: #000000 2px 0 0, #000000 1.75517px 0.958851px 0, #000000 1.0806px 1.68294px 0, #000000 0.141474px 1.99499px 0, #000000 -0.832294px 1.81859px 0, #000000 -1.60229px 1.19694px 0, #000000 -1.97998px 0.28224px 0, #000000 -1.87291px -0.701566px 0, #000000 -1.30729px -1.6136px 0, #000000 -0.421592px -1.95506px 0, #000000 0.567324px -1.91785px 0, #000000 1.41734px -1.41108px 0, #000000 1.92034px -0.558831px 0;
+}
+.hero__line{
+    position: absolute;
+    bottom: -18%;
+    left: 0;
+}
+/* <!-- UNDERFLOOR STORAGE --> */
+.stogare{
+    border: 2px solid #2fc4a8;
+    padding: 49px 49px 35px 49px;
+}
+.stogare__title{
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 1.6;
+}
+.stogare .mTit span:nth-child(2){
+    font-size: 16px;
+}
+.stogare .mTit__en{
+    border-bottom: 2px solid #2fc4a8;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+.stogare__flex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.stogare__content{
+    width: 43.08%;
+}
+
+.group__img{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.group__img figure{
+    width: 49%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+.group__img figure img{
+    width: 100%;
+}
+.group__img figure .photo__capIn{
+    left: 5px;
+    right: unset;
+}
+.stogare__img{
+    width: 54.5%;
+    position: relative;
+}
+.stogare__img figure{
+    width: 100%;
+    margin: 0;
+}
+.stogare__img figure img{
+    width: 100%;
+}
+.stogare__viewmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn__viewmore{
+    text-align: center;
+    position: relative;
+    width: 260px;
+}
+.viewmore__title{
+    font-size: 20px;
+    line-height: 1;
+}
+.viewmore__subtitle{
+    font-size: 11px;
+    line-height: 1;
+    font-family: 'Libre Caslon Display', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    margin-top: 20px;
+}
+.viewmore__icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 260px;
+    height: 20px;
+}
+/* <!-- UNDERFLOOR STORAGE --> */
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (max-width: 767px) {
+    
+}
