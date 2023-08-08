@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /* Plan */
+.txtcolor--white{
+    color: #ffffff !important;
+}
 .bg--lightblue{
     background: #8cccc2;
 }
@@ -15,7 +18,7 @@
 /* <!-- UNDERFLOOR STORAGE --> */
 .stogare{
     border: 2px solid #2fc4a8;
-    padding: 49px 49px 35px 49px;
+    padding: 50px 50px 35px 50px;
     margin: 150px 0;
 }
 .stogare__title{
@@ -112,7 +115,7 @@
     right: 0;
 }
 .equipment{
-    padding: 70px 0 60px 0;
+    padding: 80px 0 60px 0;
 }
 .equipment__list{
     display: flex;
@@ -128,7 +131,7 @@
 }
 .equipment__content{
     margin-top: 10px;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 .equipment-item-title{
     font-size: 20px;
@@ -153,8 +156,33 @@
     margin-right: 0;
 }
 /* <!-- EQUIPMENT --> */
-
-
+/* Floor Map */
+.planBtn {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 90px;
+}
+#floor{margin-top: 100px;}
+.floormap{
+    max-width: 692px; 
+    width: 70%; 
+    /* margin: 60px auto 0; */
+    margin: 0 auto;
+}
+.planBtn li {
+    max-width: 325px;
+    width: 29.55%;
+    margin: 0 5.45% 5.45% 0;
+    position: relative;
+}
+.planBtn li:nth-of-type(3n){
+    margin-right: 0;
+}
+@media screen and (max-width: 767px) {
+    /* #floor{margin-bottom: 60px;} */
+    /* .floormap{margin: 30px auto 0;} */
+}
+/* Floor Map */
 @media screen and (min-width: 768px) {
 }
 

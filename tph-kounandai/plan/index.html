@@ -39,7 +39,9 @@
     <script src="../common/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="../common/js/lib.js"></script>
     <script src="../common/js/include.js"></script>
-    
+
+    <script src="../common/js/jquery.rwdImageMaps.min.js"></script>
+    <script src="js/function.js"></script>
 </head>
 
 <body class="site-theme-white">
@@ -77,61 +79,148 @@
                 </div>
                 <!--/hero-->
                 
-                <div class="content">
-                    
-                    <h3 class="mTit">多世代の多様な思いに応える、多彩なプランバリエーション。</h3>
-                    <p class="center">南向き中心<sup>※1</sup>の1DK〜4LDK、52㎡〜82㎡の住戸プランをご用意。<br>豊富なバリエーションが、さまざまな世代のニーズにマッチし、<br class="only-pc">多様性に富んだライフスタイルに心地よくフィットします。</p>
-                    
-                    <!-- UNDERFLOOR STORAGE -->
-                    <div class="stogare">
-                        <h3 class="mTit">
-                            <span class="mTit__en">UNDERFLOOR STORAGE</span>
-                            <span>［蔵（大型床下収納）］</span>
-                        </h3>
-                        <div class="stogare__flex">
-                            <div class="stogare__content">
-                                <h4 class="mTit2 txtFlip">5つのフロアに
-                                    <br>。暮らし密着型の店舗がそろう
-                                </h4>
-                                <p class="txtFlip">改札をでたら、そこからすぐに買い物。ファッションやライフスタイル雑貨はもちろん、スーパーワイズマートや成城石井、カルディ、鮮魚・生肉店もあるフードマーケットゾーンなど食も充実。改札をでたら、そこからすぐに買</p>
-                                <div class="group__img">
+                <section>
+                    <div class="content">
+                        <h3 class="mTit">多世代の多様な思いに応える、多彩なプランバリエーション。</h3>
+                        <p class="center">南向き中心<sup>※1</sup>の1DK〜4LDK、52㎡〜82㎡の住戸プランをご用意。<br>豊富なバリエーションが、さまざまな世代のニーズにマッチし、<br class="only-pc">多様性に富んだライフスタイルに心地よくフィットします。</p>
+                        <div id="floor">
+                            <div class="floormap">
+                                <img src="imgs/floormap.jpg" alt="Floor Map" width="692" usemap="#Map" id="imgMap">
+                                <map name="Map">
+                                    <area shape="rect" coords="171,255,109,196" href="plan_b.html" class="map_b"
+                                        onmouseover="MM_swapImage('imgMap','','imgs/floormap_b.jpg',1);"
+                                        onmouseout="MM_swapImage('imgMap','','imgs/floormap.jpg',1);">
+
+                                    <area shape="rect" coords="105,254,42,197" href="plan_a.html" class="map_a"
+                                        onmouseover="MM_swapImage('imgMap','','imgs/floormap_a.jpg',1);"
+                                        onmouseout="MM_swapImage('imgMap','','imgs/floormap.jpg',1);">
+                                </map>
+                            </div>
+                        </div>
+                        <ul class="planBtn">
+                            <li class="btn_a">
+                                <a href="plan_a.html"
+                                    onmouseover="MM_swapImage('imgMap','','imgs/floormap_a.jpg',1);"
+                                    onmouseout="MM_swapImage('imgMap','','imgs/floormap.jpg',1);">
+                                    <img src="imgs/btn_type-a.jpg" alt="Cタイプ" />
+                                </a>
+                            </li>
+                            <li class="btn_b">
+                                <a href="plan_b.html"
+                                    onmouseover="MM_swapImage('imgMap','','imgs/floormap_b.jpg',1);"
+                                    onmouseout="MM_swapImage('imgMap','','imgs/floormap.jpg',1);">
+                                    <img src="imgs/btn_type-b.jpg" alt="Cタイプ" />
+                                </a>
+                            </li>
+                            <li class="btn_a">
+                                <a href="plan_a.html"
+                                    onmouseover="MM_swapImage('imgMap','','imgs/floormap_a.jpg',1);"
+                                    onmouseout="MM_swapImage('imgMap','','imgs/floormap.jpg',1);">
+                                    <img src="imgs/btn_type-a.jpg" alt="Cタイプ" />
+                                </a>
+                            </li>
+                            <li class="btn_a">
+                                <a href="plan_a.html"
+                                    onmouseover="MM_swapImage('imgMap','','imgs/floormap_a.jpg',1);"
+                                    onmouseout="MM_swapImage('imgMap','','imgs/floormap.jpg',1);">
+                                    <img src="imgs/btn_type-a.jpg" alt="Cタイプ" />
+                                </a>
+                            </li>
+                            <li class="btn_a">
+                                <a href="plan_a.html"
+                                    onmouseover="MM_swapImage('imgMap','','imgs/floormap_a.jpg',1);"
+                                    onmouseout="MM_swapImage('imgMap','','imgs/floormap.jpg',1);">
+                                    <img src="imgs/btn_type-a.jpg" alt="Cタイプ" />
+                                </a>
+                            </li>
+                            <li class="btn_a">
+                                <a href="plan_a.html"
+                                    onmouseover="MM_swapImage('imgMap','','imgs/floormap_a.jpg',1);"
+                                    onmouseout="MM_swapImage('imgMap','','imgs/floormap.jpg',1);">
+                                    <img src="imgs/btn_type-a.jpg" alt="Cタイプ" />
+                                </a>
+                            </li>
+                            <li class="btn_a">
+                                <a href="plan_a.html"
+                                    onmouseover="MM_swapImage('imgMap','','imgs/floormap_a.jpg',1);"
+                                    onmouseout="MM_swapImage('imgMap','','imgs/floormap.jpg',1);">
+                                    <img src="imgs/btn_type-a.jpg" alt="Cタイプ" />
+                                </a>
+                            </li>
+                            <li class="btn_a">
+                                <a href="plan_a.html"
+                                    onmouseover="MM_swapImage('imgMap','','imgs/floormap_a.jpg',1);"
+                                    onmouseout="MM_swapImage('imgMap','','imgs/floormap.jpg',1);">
+                                    <img src="imgs/btn_type-a.jpg" alt="Cタイプ" />
+                                </a>
+                            </li>
+                            <!-- <li class="btn_e"><a href="plan_e.html"
+                                    onmouseover="MM_swapImage('imgMap','','imgs/floormap_e.jpg',1);"
+                                    onmouseout="MM_swapImage('imgMap','','imgs/floormap.jpg',1);">
+                                    <img src="imgs/btn_type-e.jpg" alt="Eタイプ" />
+                                </a></li> -->
+                            <!-- <li><a href="plan_g.html"><img src="imgs/btn_type-g.jpg" alt="Gタイプ" /></a></li> -->
+                            <!-- <li class="btn_h1"><h3 class="txt__mark">【VRモデルルーム有】</h3>
+                                <a href="plan_h1.html" onmouseover="MM_swapImage('imgMap','','imgs/floormap_h1.jpg',1);" onmouseout="MM_swapImage('imgMap','','imgs/floormap.jpg',1);">
+                                    <img src="imgs/btn_type-h1.jpg" alt="H1タイプ" />
+                                </a>
+                            </li>-->
+                        </ul>
+                    </div>
+                </section>
+                <!-- UNDERFLOOR STORAGE -->
+                <section>
+                    <div class="content">
+                        <div class="stogare">
+                            <h3 class="mTit">
+                                <span class="mTit__en">UNDERFLOOR STORAGE</span>
+                                <span>［蔵（大型床下収納）］</span>
+                            </h3>
+                            <div class="stogare__flex">
+                                <div class="stogare__content">
+                                    <h4 class="mTit2 txtFlip">5つのフロアに
+                                        <br>。暮らし密着型の店舗がそろう
+                                    </h4>
+                                    <p class="txtFlip">改札をでたら、そこからすぐに買い物。ファッションやライフスタイル雑貨はもちろん、スーパーワイズマートや成城石井、カルディ、鮮魚・生肉店もあるフードマーケットゾーンなど食も充実。改札をでたら、そこからすぐに買</p>
+                                    <div class="group__img">
+                                        <figure>
+                                            <img src="./imgs/img01.jpg" width="209" height="150" loading="lazy" alt="image photo">
+                                            <figcaption class="photo__capIn" data-color="sdw-wh2">image photo</figcaption>
+                                        </figure>
+                                        <figure>
+                                            <img src="./imgs/img02.jpg" width="209" height="150" loading="lazy" alt="image photo">
+                                            <figcaption class="photo__capIn" data-color="sdw-wh2">image photo</figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="stogare__img">
                                     <figure>
-                                        <img src="./imgs/img01.jpg" width="209" height="150" loading="lazy" alt="image photo">
-                                        <figcaption class="photo__capIn" data-color="sdw-wh2">image photo</figcaption>
+                                        <img src="./imgs/img03.jpg" width="540" height="464" loading="lazy" alt="蔵（大型床下収納）完成予想イラスト［●タイプ］">
                                     </figure>
-                                    <figure>
-                                        <img src="./imgs/img02.jpg" width="209" height="150" loading="lazy" alt="image photo">
-                                        <figcaption class="photo__capIn" data-color="sdw-wh2">image photo</figcaption>
-                                    </figure>
+                                    <p class="photo__capOut">蔵（大型床下収納）完成予想イラスト［●タイプ］</p>
                                 </div>
                             </div>
-                            <div class="stogare__img">
-                                <figure>
-                                    <img src="./imgs/img03.jpg" width="540" height="464" loading="lazy" alt="蔵（大型床下収納）完成予想イラスト［●タイプ］">
-                                </figure>
-                                <p class="photo__capOut">蔵（大型床下収納）完成予想イラスト［●タイプ］</p>
+                            <div class="stogare__viewmore">
+                                <a class="btn__viewmore" href="#" target="_blank">
+                                    <p class="viewmore__title">採用プランを見る</p>
+                                    <img class="viewmore__icon" src="./imgs/arrow.svg" width="260" height="20" alt="arrow view more">
+                                    <p class="viewmore__subtitle">VIEW PLAN</p>
+                                </a>
                             </div>
                         </div>
-                        <div class="stogare__viewmore">
-                            <a class="btn__viewmore" href="#" target="_blank">
-                                <p class="viewmore__title">採用プランを見る</p>
-                                <img class="viewmore__icon" src="./imgs/arrow.svg" width="260" height="20" alt="arrow view more">
-                                <p class="viewmore__subtitle">VIEW PLAN</p>
-                            </a>
-                        </div>
                     </div>
-                </div>
+                </section>
                 <!--/content-->
                 <!-- /UNDERFLOOR STORAGE -->
-                <div class="bg--lightblue">
+                <section class="bg--lightblue">
                     <div class="content">
                         <div class="equipment">
-                            <h3 class="mTit" data-ataripink="内容確認"><span class="mTit__en">EQUIPMENT</span><span class="txtFlip__center">。街との調和、温もりを感じさせるデザイン</span></h3>
+                            <h3 class="mTit" data-ataripink="内容確認"><span class="mTit__en">EQUIPMENT</span><span class="txtFlip__center txtcolor--white">。街との調和、温もりを感じさせるデザイン</span></h3>
                             <div class="equipment__list">
                                 <div class="equipment__item">
                                     <div class="equipment__img">
                                         <img src="./imgs/img04.jpg" width="252" height="176" loading="lazy" alt="ディスポーザ">
-                                        <p class="photo__capIn">image photo</p>
+                                        <p class="photo__capIn" data-color="white">image photo</p>
                                     </div>
                                     <div class="equipment__content">
                                         <p class="equipment-item-title">ディスポーザ</p>
@@ -187,7 +276,7 @@
                                 <div class="equipment__item">
                                     <div class="equipment__img">
                                         <img src="./imgs/img09.jpg" width="252" height="176" loading="lazy" alt="image photo">
-                                        <p class="photo__capIn">image photo</p>
+                                        <p class="photo__capIn" data-color="white">image photo</p>
                                     </div>
                                     <div class="equipment__content">
                                         <p class="equipment-item-title">宅配ボックス</p>
@@ -198,7 +287,7 @@
                                 <div class="equipment__item">
                                     <div class="equipment__img">
                                         <img src="./imgs/img10.jpg" width="252" height="176" loading="lazy" alt="image photo">
-                                        <p class="photo__capIn">image photo</p>
+                                        <p class="photo__capIn" data-color="white">image photo</p>
                                     </div>
                                     <div class="equipment__content">
                                         <p class="equipment-item-title">24時間ゴミ出し</p>
@@ -215,7 +304,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
                 <!-- Bottom Content --> 
                 <script type="text/javascript">parts('../','bottom-content.html');</script>
                 <!-- /Bottom Content -->
