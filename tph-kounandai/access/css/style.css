@@ -316,7 +316,7 @@
 
 @media screen and (max-width: 767px) {
     .station__item:nth-child(2n){
-        margin-right: 0;
+        margin-right: 0; 
     }
     .station__item:nth-of-type(3n){
         margin-right: unset;
