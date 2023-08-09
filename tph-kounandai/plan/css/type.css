@@ -1,0 +1,5 @@
+.wrap--1132{
+    max-width: 1132px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
