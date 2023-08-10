@@ -131,13 +131,15 @@
     .station__item{
         margin-bottom: 24px;
     }
+}
+@media screen and (max-width: 360px){
     .station__name span, .station__time .number{
         font-size: min(6vw, 30px);
     }
     .station__name, .station__time span{
         font-size: min(5vw, 24px);
     }
-}
+} 
 /* Station */
 
 /* Route Search */
@@ -349,9 +351,13 @@
 @media screen and (max-width: 375px){
     .leisure__img .photo__capIn {
         bottom: -9%;
+        right: 6%;
     }
     .leisure {
         padding: 50px 0 35px 0;
+    }
+    .group__img .photo__capOut{
+        right: 5.5%;
     }
 }
 /* Places */
@@ -406,7 +412,7 @@
 }
 .places-item p{
     font-size: 12px;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .bg--lightblue{
@@ -415,9 +421,6 @@
 .places__block{
     margin-top: 40px;
     padding: 75px 0;
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* position: relative; */
 }
 .places__block .content{
     display: flex;
@@ -433,9 +436,6 @@
 }
 .places__block .block__image{
     width: 50.4%;
-    /* position: absolute;
-    top: 10%;
-    right: 0; */
 }
 .places__block .block__image .image{
     position: relative;
@@ -468,37 +468,9 @@
         margin-right: 0;
     }
     .places__block{
-        /* display: flex;
-        flex-direction: column; */
         padding: 50px 0;
     }
-    /* .places__block .block__image{
-        position: unset;
-    } */
-    /* .places__block .right{
-        order: -1;
-        width: 100%;
-        width: calc(100% + 40px);
-        position: relative;
-    }
-    .places__block .right .image{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    } */
-    /* .places__block .left{
-        width: 100%;
-        text-align: center;
-    }
-    .places__block .left .image{
-        width: fit-content;
-        margin: 25px auto 0 auto;
-    }
-    .image__full{
-        position: relative;
-    } */
+
     .places__block .block__content{
         width: 100%;
         text-align: center;
@@ -526,7 +498,7 @@
         margin: 0 0 40px 0;
     }
     .places__box:nth-child(1) .places-item p {
-        line-height: 1.6;
+        line-height: 1.7;
     }
 }
 /* Places */
