@@ -69,7 +69,7 @@
     margin-top: 10px;
     font-size: 10px;
 }
-.station__swipe {
+.station__icon {
     margin-top: 30px;
     text-align: center;
 }
@@ -114,6 +114,19 @@
     .station__box{
         margin-top: 35px;
     }
+
+    .station__img .photo__capIn{
+        bottom: -7%;
+    }
+    /* swipe */
+    .station__swipe{
+        overflow-x: scroll;
+    }
+    .station__swipe img{
+        max-width: 150%;
+        width: auto;
+    }
+    /* swipe */
 }
 @media screen and (max-width: 668px) {
     .station__list{
