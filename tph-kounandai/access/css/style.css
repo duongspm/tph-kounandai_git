@@ -32,19 +32,13 @@
 }
 .station__list{
     margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 .station__item{
-    width: 31.67%;
-    margin: 0 2.4% 3% 0;
     display: flex;
     flex-direction: column;
-
-    /* font-family: "A-OTF A1 明朝 Std Bold", sans-serif; */
-}
-.station__item:nth-of-type(3n){
-    margin-right: 0;
+    margin: 0 20px 35px 0;
 }
 
 .station__head{
@@ -52,7 +46,6 @@
     justify-content: space-between;
     border-bottom: 2px solid #00B795;
 }
-
 .station__name{
     margin-right: 10px;
 }
@@ -76,7 +69,75 @@
     margin-top: 10px;
     font-size: 10px;
 }
+.station__swipe {
+    margin-top: 30px;
+    text-align: center;
+}
+@media screen and (max-width: 1100px) {
+    .station__name, .station__time .number {
+        font-size: 27px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .station__item:nth-of-type(3n){
+        margin-right: 0;
+    }
+}
 
+@media screen and (max-width: 767px) {
+    .station__list{
+        margin-top: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .station__item:nth-of-type(2n){
+        margin-right: 0;
+    }
+    .station__tit{
+        font-size: 17px;
+    }
+    .station__desc{
+        font-size: 12px;
+    }
+    .station__time{
+        font-size: 12px;
+    }
+    .station__name{
+        font-size: 20px;
+    }
+    .station__name span, .station__time .number{
+        font-size: 30px;
+        line-height: 1;
+    }
+    .station__time span{
+        font-size: 20px;
+    }
+    .station__box{
+        margin-top: 35px;
+    }
+}
+@media screen and (max-width: 668px) {
+    .station__list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .station__item{
+        margin-right: 0;
+    }
+    .station__name,
+    .station__time span{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .station__item{
+        margin-bottom: 24px;
+    }
+    .station__name span, .station__time .number{
+        font-size: min(6vw, 30px);
+    }
+    .station__name, .station__time span{
+        font-size: min(5vw, 24px);
+    }
+}
 /* Station */
 
 /* Route Search */
@@ -114,7 +175,10 @@
 }
 .lable__custom{
     background: #00B795;
-    padding: 17px 15px;
+    padding: 17px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* 92px */
     width: 23%;
     height: 100%;
@@ -134,12 +198,11 @@
     outline: none;
 }
 .route__desc{
+    font-size: 10px;
     margin-top: 23px;
     margin-bottom: 18px;
 }
-.fz--10{
-    font-size: 10px;
-}
+
 .route__btn{
     display: flex;
     justify-content: center;
@@ -171,6 +234,66 @@
 }
 .route__note{
     margin-top: 10px;
+    font-size: 10px;
+}
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (max-width: 767px) {
+    .route{
+        margin: 10px 0 45px 0;
+        padding: 30px 15px;
+    }
+    .input__group{
+        flex-direction: column;
+    }
+    .route__title {
+        font-size: 24px;
+    }
+    .route__subtitle{
+        font-size: 14px;
+    }
+    .input__custom,
+    .lable__custom{
+        font-size: 15px;
+    }
+    .input__item:nth-child(1) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .input__item{
+        max-width: 100%;
+    }
+    .input__custom{
+        padding: 11px 25px;
+    }
+    .fz--12{
+        font-size: 12px;
+    }
+    .route__note,.route__desc{
+        font-size: 12px;
+    }
+    .btn__search span{
+        font-size: 17px;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 375px) {
+    .input__custom{
+        width: 75%;
+    }
+    .lable__custom{
+        width: 25%;
+    }
+    .btn__search {
+        max-width: 135px;
+        padding: 11px;
+    }
+    .route__desc {
+        margin-top: 20px;
+        margin-bottom: 16px;
+    }
 }
 /* Route Search */
 
@@ -183,29 +306,54 @@
     top: 101%;
     right: 1.5%;
 }
-.img__item{
+.group__img .img__item{
     width: 33.33%;
 }
 .img__item img{
     width: 100%;
 }
-.content--1450{
-    max-width: 1450px;
-    width: calc(100% - 40px);
-    margin: 0 auto;
-}
+
 .leisure{
     padding: 80px 0;
 }
 .leisure__img{
     position: relative;
-    margin-top: 80px;
+    margin: 80px auto 0 auto;
+    max-width: 1450px;
+    width: 100%;
 }
 .leisure__img .photo__capIn{
     bottom: 15px;
     right: 18%;
 }
 
+@media screen and (max-width: 767px) {
+    .group__img .img__item{
+        width: 50%;
+    }
+    .leisure__img{
+        margin-top: 30px;
+    }
+    .leisure__img img{
+        width: 100%;
+    }
+    .leisure__img .photo__capIn {
+        bottom: -4%;
+        right: 4%;
+    }
+    .leisure__swipe{
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 375px){
+    .leisure__img .photo__capIn {
+        bottom: -9%;
+    }
+    .leisure {
+        padding: 50px 0 35px 0;
+    }
+}
 /* Places */
 .places__group{
     display: flex;
@@ -217,9 +365,7 @@
     width: 30%;
     margin: 0 5% 5% 0;
 }
-.places__box:nth-child(3n){
-    margin-right: 0;
-}
+
 .places__box:nth-child(1) .places-item p{
     line-height: 1.2;
 }
@@ -231,7 +377,7 @@
 }
 .placesBox-img-title{
     color: #ffffff;
-    font-size: min(2.182vw, 25px);
+    font-size: 25px;
     line-height: 1;
     font-family: 'Libre Caslon Display', serif;
     text-transform: uppercase;
@@ -252,13 +398,7 @@
     margin-top: 10px;
     padding-right: 15px;
 }
-.places-list[data-atariBlack]::before{
-    /* bottom: -35px;
-    right: 15px;
-    top: unset;
-    left: unset;
-    transform: translate(0); */
-}
+
 .places-item{
     display: flex;
     justify-content: space-between;
@@ -275,23 +415,30 @@
 .places__block{
     margin-top: 40px;
     padding: 75px 0;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* position: relative; */
+}
+.places__block .content{
     display: flex;
     justify-content: space-between;
 }
-.places__block .left{
+.places__block .block__content{
     width: 43.2%;
     color: #ffffff;
     margin-top: 30px;
 }
-.places__block .left .image{
+.places__block .block__content .image{
     margin-top: 40px;
 }
-.places__block .right{
+.places__block .block__image{
     width: 50.4%;
+    /* position: absolute;
+    top: 10%;
+    right: 0; */
 }
-.places__block .right .image{
+.places__block .block__image .image{
     position: relative;
-    /* transform: translateX(70px); */
 }
 .places__block .image{
     position: relative;
@@ -304,25 +451,93 @@
 .places__block .mTit2{
     color: #ffffff;
 }
-
-/* Places */
-@media screen and (max-width: 1100px) {
-    .station__name, .station__time .number {
-        font-size: 27px;
+@media screen and (min-width: 768px) {
+    .places__box:nth-child(3n){
+        margin-right: 0;
     }
 }
+@media screen and (max-width: 768px){
+    .places__group{
+        padding: 0;
+    }
+    .places__box {
+        width: 48%;
+        margin: 0 4% 4% 0;
+    }
+    .places__box:nth-child(2n){
+        margin-right: 0;
+    }
+    .places__block{
+        /* display: flex;
+        flex-direction: column; */
+        padding: 50px 0;
+    }
+    /* .places__block .block__image{
+        position: unset;
+    } */
+    /* .places__block .right{
+        order: -1;
+        width: 100%;
+        width: calc(100% + 40px);
+        position: relative;
+    }
+    .places__block .right .image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    } */
+    /* .places__block .left{
+        width: 100%;
+        text-align: center;
+    }
+    .places__block .left .image{
+        width: fit-content;
+        margin: 25px auto 0 auto;
+    }
+    .image__full{
+        position: relative;
+    } */
+    .places__block .block__content{
+        width: 100%;
+        text-align: center;
+    }
+    .places__block .block__content .image{
+        margin-top: 25px;
+    }
+    .places__block .block__content .image img{
+        width: 100%;
+    }
+    .places__block .block__image{
+        width: 100%;
+    }
+    .places__block .block__image .image img{
+        width: 100%;
+    }
+    .places__block .image .photo__capIn{
+        right: 5px;
+        left: unset;
+    }
+}
+@media screen and (max-width: 686px){
+    .places__box {
+        width: 100%;
+        margin: 0 0 40px 0;
+    }
+    .places__box:nth-child(1) .places-item p {
+        line-height: 1.6;
+    }
+}
+/* Places */
+
+@media screen and (max-width: 1100px) {
+
+}
 @media screen and (min-width: 768px) {
+    
 }
 
 @media screen and (max-width: 767px) {
-    .station__item:nth-child(2n){
-        margin-right: 0; 
-    }
-    .station__item:nth-of-type(3n){
-        margin-right: unset;
-    }
-    .station__item {
-        width: 49%;
-        margin: 0 2% 3% 0;
-    }
+
 }
