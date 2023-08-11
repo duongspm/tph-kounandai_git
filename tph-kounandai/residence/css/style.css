@@ -89,7 +89,15 @@
     justify-content: center;
     text-align: center;
     width: 35.47%;
-    border-right: 1px solid #ffffff;
+    position: relative;
+}
+.season__title::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 90%;
+    right: 0;
+    background: #ffffff;
 }
 .season__title .titJp{
     font-size: 24px;
@@ -98,6 +106,8 @@
 .season__title .titEn{
     font-size: 11px;
     line-height: 1;
+    font-family: 'Libre Caslon Display', serif;
+    letter-spacing: 1px;
 }
 .season__desc{
     width: 64.53%;
@@ -159,9 +169,15 @@
     .sect1{
         margin-bottom: 60px;
     }
+    .season__title{
+        width: 98px;
+    }
+    .season__desc{
+        width: calc(100% - 98px);
+    }
 }
 
-@media screen and (max-width: 568px){
+@media screen and (max-width: 578px){
     .season__item {
         width: 100%;
         max-width: 100%;
@@ -325,7 +341,7 @@
     }
     .land .box2{
         margin-top: 50px;
-        padding: 25px;
+        padding: 14px;
         flex-direction: column;
     }
     .land .box2 .col1 {

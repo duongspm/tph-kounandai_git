@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* Area Guide */
+.guideHead{text-align: center; padding: 90px 0 70px;}
+.guideTit{position: absolute; top: 0; font-size: 175px; line-height: 0.65; opacity: .15; color: #fff; z-index: 1; font-weight: 300; letter-spacing: 0.1em;}
+.guideTit__jp{text-align: center; margin: 0 0 70px; font-size: 25px;}
+
+.guideGroup{position: relative; padding: 100px 0 70px; z-index: 2; overflow: hidden;}
+.guideGroup:before{content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 200px; background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,0)); display: block; z-index: -1;}
+.guideGroup .content{max-width: 1150px;}
+
+.guideBox{margin: 0 0 90px; position: relative;}
+.guideBox__tit{font-size: 23px; line-height: 1.5;}
+.guideBox__info{font-size: 13px; margin: 0 0 10px;}
+.guideBox__inner .mDesc{font-size: 14px; line-height: 1.5;}
+
+.gourmet{background: #f2f2ec;}
+.gourmet .guideTit{left: -0.05em;}
+.gourmet .guideBox__outer{background: #e6e5dc;}
+
+.cultural{background: #e1e9e9; margin-bottom: 50px;}
+.cultural .guideTit{right: -0.05em;}
+.cultural .guideBox__outer{background: #c2cfce;}
+
+.guideBox__img .caption{font-size: 10px; text-align: right; position: absolute; bottom:5px; right:5px; color: white}
+.guideBox__img .caption2{font-size: 10px; text-align: right; position: absolute; bottom:5px; left:5px; color: white}
+.specBox{padding: 10px; margin-top: 10px; border-top: #000 solid 1px; font-size: 12px;line-height: 1.5;}
+
+@media screen and (min-width: 768px) {
+    .guideBox__img{width: 54.52%; height: 500px;}
+    .guideBox__outer{position: absolute; top: 45%; width: 47.8%; height: 60%; display: flex; align-items: center; z-index: 10;}
+    .guideBox__inner{max-width: 420px; margin: 0 auto; width: 90%;}    
+    
+    .guideBox__odd .guideBox__outer{right: 0;}
+    
+    .guideBox__even{display: flex; justify-content: flex-end;}    
+    .guideBox__even .guideBox__outer{left: 0;}
+}
+
+@media screen and (max-width: 767px) {
+    .guideHead{padding: 30px 0 25px;}
+    .guideTit{font-size: 56px;}
+    .guideTit__jp{margin: 0 0 20px;}
+    
+    .guideGroup{padding: 50px 0 20px; margin: 0 0 40px;}
+    .guideBox{margin: 0 0 30px;}
+    .guideBox__img{margin: 0; height: 64vw;}    
+    .guideBox__outer{padding: 20px; top: 10px; position: relative;}
+    .guideBox__tit{font-size: 18px;}
+    .guideBox__info{font-size: 11px; margin: 0 0 5px;}
+    
+    .cultural .guideTit{right: auto; left: -0.05em;}
+}
