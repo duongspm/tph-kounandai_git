@@ -218,7 +218,7 @@
 .service__content::after{
     content: "";
     display: block;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     position: absolute;
     top: 0;
@@ -229,7 +229,7 @@
     padding-right: 120px;
 }
 .bg--left.service__content::after{
-    left: -10%;
+    left: -100vw;
 }
 .service__img{
     width: 51.5%;
@@ -287,7 +287,7 @@
     width: 100%;
 }
 .bg--right.service__content::after{
-    right: -10%;
+    right: -100vw;
 }
 .bg--right.service__content{
     padding-left: 80px;
@@ -305,7 +305,7 @@
 .slick-prev, .slick-prev:hover, .slick-prev:focus, .slick-next, .slick-next:hover, .slick-next:focus{
     width: 40px !important;
     height: 40px !important;
-    border: 1px solid #8cccc2 !important;
+    border: 2px solid #8cccc2 !important;
     transition: .3s;
     cursor: pointer;
     z-index: 2;
@@ -314,12 +314,12 @@
 .slick-prev:hover::before, .slick-prev::before {
     content: '' !important;
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     transform: rotate(45deg);
-    border-bottom: 1px solid #8cccc2;
-    border-left: 1px solid #8cccc2;
-    margin-left: 7px;
+    border-bottom: 2px solid #8cccc2;
+    border-left: 2px solid #8cccc2;
+    margin-left: 4px;
 }
 .service__slick .slick-prev {
     left: -50px;
@@ -327,13 +327,13 @@
 
 .slick-next:hover::before, .slick-next::before {
     content: '' !important;
-    border-top: 1px solid #8cccc2;
-    border-right: 1px solid #8cccc2;
-    margin-right: 7px;
+    border-top: 2px solid #8cccc2;
+    border-right: 2px solid #8cccc2;
+    margin-right: 4px;
     content: '';
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     transform: rotate(45deg);
 }
 .service__slick .slick-next {
@@ -385,6 +385,12 @@
 .service__lesson{
     margin-top: 170px !important;
 }
+.service__lesson .box__secon{
+    padding: 30px 50px 45px 80px;
+}
+.service__lesson .boxSecon__right{
+    width: 48%;
+}
 .slick__lesson .serviceSlick__title{
     width: 100%;
     text-align: center;
@@ -417,7 +423,7 @@
     flex-direction: column;
 }
 .boxBuild__content{
-    width: 75%;
+    width: 77%;
 }
 .boxBuild__border p{
     font-size: 13px;
@@ -434,9 +440,51 @@
     line-height: 1.6;
 }
 .service__lesson .boxSecon__left{
-    width: 47%;
+    width: 49%;
+}
+.service__medical .box__first{
+    margin-top: 80px;
+}
+.service__medical .box__secon{
+    margin-top: 90px;
+}
+.service__medical .boxSecon__title{
+    margin-bottom: 2em;
+}
+.service__medical .box__secon{
+    align-items: flex-end;
+}
+.service__medical .boxBuild__content {
+    width: 71%;
+}
+.service__medical .box__secon[data-atariBlack]::before, [data-atariPink]::before {
+    top: -13%;
+    left: 45%;
+    transform: unset;
 }
 /* Service */
+
+/* LIFE INFORMATION */
+.lifeInfo{
+    max-width: 1230px;
+    width: 100%;
+    margin: 110px auto 0 auto;
+}
+.lifeInfo__title{
+    text-align: center;
+}
+.lifeInfo__title .titleEn{
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 1.6;
+    color: #8cccc2;
+    font-family: 'Libre Caslon Display', serif;
+}
+.lifeInfo__title span:nth-child(2){
+    font-size: 17px;
+    line-height: 1.6;
+}
+/* LIFE INFORMATION */
 @media screen and (min-width: 768px) {
 }
 
