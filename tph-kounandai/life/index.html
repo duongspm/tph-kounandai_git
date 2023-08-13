@@ -35,11 +35,13 @@
     <!-- assets -->
     <link rel="stylesheet" href="../common/css/common.css" />
     <link rel="stylesheet" href="css/style.css" />
-    
+    <link rel="stylesheet" href="../common/css/slick.css">
+    <link rel="stylesheet" href="../common/css/slick-theme.css">
     <script src="../common/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="../common/js/lib.js"></script>
     <script src="../common/js/include.js"></script>
-    
+    <script src="../common/js/slick.min.js"></script>
+    <script src="./js/function.js"></script>
 </head>
 
 <body class="site-theme-white">
@@ -63,7 +65,7 @@
     <div id="top" class="currentPage currentPage--life">
 
         <!-- Header --> 
-        <script type="text/javascript">parts('../','header.html');</script> 
+        <!-- <script type="text/javascript">parts('../','header.html');</script>  -->
         <!-- /Header -->
         
         <!-- Main -->
@@ -112,7 +114,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="area__flex area__flex2 bg--browlight">
+                            <div class="area__flex area__flex2 bg--brownlight">
                                 <div class="flex__2img" data-atariblack="画像入手中">
                                     <div class="image__cap">
                                         <img src="./imgs/central-03.jpg" width="280" height="197" loading="lazy" alt="港南台夏祭り">
@@ -168,7 +170,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="area__flex area__flex3 bg--browlight">
+                            <div class="area__flex area__flex3 bg--brownlight">
                                 <div class="img__left">
                                     <div class="image__cap">
                                         <img src="./imgs/north-04.jpg" width="278" height="244" loading="lazy" alt="港南台北公園「どんぐりハウス」（徒歩12分・約940m）">
@@ -229,10 +231,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="service">
-                    <div class="service__block">
+                <div class="service wrap--1250">
+                    <div class="service__block service__first">
                         <div class="service__blockTop">
-                            <div class="service__content">
+                            <div class="service__content bg--left">
                                 <h4 class="mTit2">子育て家族を応援するコミュニティの
                                     <br>イベントや地域の施設も充実。</h4>
                                 <p>徒歩4分の「横浜市港南台地域ケアプラザ」では、子育て家族や高齢者・障害者のためのイベントを開催。図書コーナーや体育館がある「港南台地区センター」も徒歩5分と、子育てに安心の施設が身近に整います。</p>
@@ -240,9 +242,199 @@
                             <div class="service__img">
                                 <div class="image__cap">
                                     <img src="./imgs/child-01.jpg" width="637" height="538" loading="lazy" alt="imaeg photo">
-                                    <p class="photo__capIn cap--left">image photo</p>
+                                    <p class="photo__capIn capIn--left">image photo</p>
                                 </div>
                             </div>
+                            <div class="service__txt--ver">
+                                <img src="./imgs/child-txt.jpg" alt="" width="95" height="627" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="box__first">
+                            <div class="boxFirst__left">
+                                <div class="image__cap">
+                                    <img src="./imgs/child-02.jpg" alt="横浜市港南台地域ケアプラザ（徒歩4分・約260m）" width="354" height="258" loading="lazy">
+                                    <p class="photo__capOut photo__capOut--center">横浜市港南台地域ケアプラザ（徒歩4分・約260m）</p>
+                                </div>
+                                <div class="image__cap">
+                                    <img src="./imgs/child-03.jpg" alt="港南台地区センター（徒歩5分・約370m）" width="354" height="258" loading="lazy">
+                                    <p class="photo__capOut photo__capOut--center">港南台地区センター（徒歩5分・約370m）</p>
+                                </div>
+                            </div>
+                            <div class="boxFirst__right bg--brownlight">
+                                <p class="boxFirst__title">港南台地区センター施設案内</p>
+                                <div class="boxFirst__content">
+                                    <p class="text--indent"><span class="dots">●</span>プレイルーム（幼児用おもちゃ、すべり台などの遊具）</p>
+                                    <p class="text--indent"><span class="dots">●</span>図書コーナー（約１万冊の蔵書、10席自習コーナー）</p>
+                                    <p class="text--indent"><span class="dots">●</span>体育室（卓球、バドミントン、バスケットボール、<br>バレーボール、ダンス、体操、演劇などに利用可能）</p>
+                                    <p class="text--indent"><span class="dots">●</span>和室（茶道・着付・舞踊・ヨガなどに利用可能）</p>
+                                    <p class="text--indent"><span class="dots">●</span>料理室（調理機器一式、食器、蕎麦打ち用具一式など機材完備）</p>
+                                    <p class="text--indent"><span class="dots">●</span>娯楽コーナー（囲碁、将棋、談話などに利用可能）</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__block service__secon">
+                        <div class="service__blockTop">
+                            <div class="service__txt--ver">
+                                <img src="./imgs/edu-txt.jpg" alt="" width="55" height="575" loading="lazy">
+                            </div>
+                            <div class="service__img">
+                                <div class="image__cap">
+                                    <img src="./imgs/edu-01.jpg" width="637" height="538" loading="lazy" alt="imaeg photo">
+                                    <p class="photo__capIn capIn--left" data-color="sdw-wh">image photo</p>
+                                </div>
+                            </div>
+                            <div class="service__content bg--right">
+                                <h4 class="mTit2">通学区の小・中学校や
+                                    <br>幼児の教育施設が身近に。</h4>
+                                <p>通学校の「港南台第二小学校」が徒歩6分、「港南台第一中学校」も徒歩8分。さらに、幼稚園や保育園も徒歩圏に揃う、子育て家族に安心のロケーションです。</p>
+                            </div>
+                        </div>
+                        <div class="service__slick content">
+                            <div class="js-slick-service">
+                                <div class="serviceSlick__item">
+                                    <div class="image__cap"><img src="./imgs/edu-02.jpg" width="266" height="197" loading="lazy" alt="港南台第二小学校（徒歩6分・t約450m）">
+                                    <p class="serviceSlick__title">港南台第二小学校（徒歩6分・t約450m）</p>
+                                    </div>
+                                </div>
+                                <div class="serviceSlick__item">
+                                    <div class="image__cap"><img src="./imgs/edu-03.jpg" width="266" height="197" loading="lazy" alt="港南台第一中学校（徒歩8分・約580m）">
+                                    <p class="serviceSlick__title">港南台第一中学校（徒歩8分・約580m）</p>
+                                    </div>
+                                </div>
+                                <div class="serviceSlick__item">
+                                    <div class="image__cap"><img src="./imgs/edu-04.jpg" width="266" height="197" loading="lazy" alt="ひまわり保育園（徒歩5分・約350m）">
+                                    <p class="serviceSlick__title">ひまわり保育園（徒歩5分・約350m）</p>
+                                    </div>
+                                </div>
+                                <div class="serviceSlick__item">
+                                    <div class="image__cap"><img src="./imgs/edu-05.jpg" width="266" height="197" loading="lazy" alt="赤い屋根保育園（徒歩6分・約440m）">
+                                    <p class="serviceSlick__title">赤い屋根保育園（徒歩6分・約440m）</p>
+                                    </div>
+                                </div>
+                                <div class="serviceSlick__item">
+                                    <div class="image__cap"><img src="./imgs/edu-06.jpg" width="266" height="197" loading="lazy" alt="港南台わかば保育園（徒歩6分・約450m）">
+                                    <p class="serviceSlick__title">港南台わかば保育園（徒歩6分・約450m）</p>
+                                    </div>
+                                </div>
+                                <div class="serviceSlick__item">
+                                    <div class="image__cap"><img src="./imgs/edu-07.jpg" width="266" height="197" loading="lazy" alt="港南台つばさ保育園（徒歩7分・約510m）">
+                                    <p class="serviceSlick__title">港南台つばさ保育園（徒歩7分・約510m）</p>
+                                    </div>
+                                </div>
+                                <div class="serviceSlick__item">
+                                    <div class="image__cap"><img src="./imgs/edu-08.jpg" width="266" height="197" loading="lazy" alt="港南台幼稚園（徒歩8分・約590m）">
+                                    <p class="serviceSlick__title">港南台幼稚園（徒歩8分・約590m）</p>
+                                    </div>
+                                </div>
+                                <div class="serviceSlick__item">
+                                    <div class="image__cap"><img src="./imgs/edu-09.jpg" width="266" height="197" loading="lazy" alt="かもめ幼稚園（徒歩11分・約840m）">
+                                    <p class="serviceSlick__title">かもめ幼稚園（徒歩11分・約840m）</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box__secon content bg--brownlight" data-ataripink="掲載NGのため削除">
+                            <div class="boxSecon__left">
+                                <h4 class="boxSecon__title  txtFlip">5つのフロアに
+                                    <br>。暮らし密着型の店舗がそろう
+                                </h4>
+                                <p class="boxSecon__desc txtFlip">
+                                    改札をでたら、そこからすぐに買い物。ファッションやライフスタイル雑貨はもちろん、スーパーワイズマートや成城石井、カルディ、鮮魚・生肉店もあるケットゾーンなど食も充実そこからすぐに買い物。ファッションや。
+                                </p>
+                            </div>
+                            <div class="boxSecon__right">
+                                <div class="image__cap">
+                                    <img src="./imgs/private-school.jpg" alt="山手学院（徒歩00分・約000m）" width="464" height="270" loading="lazy">
+                                    <p class="photo__capOut">山手学院（徒歩00分・約000m）</p>
+                                </div>
+                            </div>
+                            <div class="boxSecon__title--vertical">private school</div>
+                        </div>
+                    </div>
+                    <div class="service__block service__first  service__lesson">
+                        <div class="service__blockTop">
+                            <div class="service__content bg--left">
+                                <h4 class="mTit2">心も体もスクスク育つ、
+                                    <br>健康と学びの両立環境。</h4>
+                                <p>現地周辺には、多くの塾に加え、スイミングスクールやスポーツクラブ、さまざまなカルチャースクールが点在。子どもたちだけでなく大人も含めた“学びのある暮らし”をサポートします。</p>
+                            </div>
+                            <div class="service__img">
+                                <div class="image__cap">
+                                    <img src="./imgs/lesson-01.jpg" width="637" height="538" loading="lazy" alt="imaeg photo">
+                                    <p class="photo__capIn capIn--left">image photo</p>
+                                </div>
+                            </div>
+                            <div class="service__txt--ver">
+                                <img src="./imgs/child-txt.jpg" alt="" width="95" height="627" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="service__slick content">
+                            <div class="js-slick-service slick__lesson">
+                                <div class="serviceSlick__item">
+                                    <div class="image__cap"><img src="./imgs/lesson-02.jpg" width="264" height="197" loading="lazy" alt="RAQNESS（徒歩3分・約180m）">
+                                    <p class="serviceSlick__title">RAQNESS
+                                        <br>（徒歩3分・約180m）</p>
+                                    </div>
+                                </div>
+                                <div class="serviceSlick__item">
+                                    <div class="image__cap"><img src="./imgs/lesson-03.jpg" width="264" height="197" loading="lazy" alt="chocoZAP （徒歩9分・約720m）">
+                                    <p class="serviceSlick__title">chocoZAP <br>（徒歩9分・約720m）</p>
+                                    </div>
+                                </div>
+                                <div class="serviceSlick__item">
+                                    <div class="image__cap"><img src="./imgs/lesson-04.jpg" width="264" height="197" loading="lazy" alt="エルウェーブ港南台スイミングスクール（徒歩10分・約780m）">
+                                    <p class="serviceSlick__title">エルウェーブ港南台スイミングスクール<br>（徒歩10分・約780m）</p>
+                                    </div>
+                                </div>
+                                <div class="serviceSlick__item">
+                                    <div class="image__cap"><img src="./imgs/lesson-05.jpg" width="264" height="197" loading="lazy" alt="フィットネス＆スパ ココカラ港南台（徒歩11分・約820m）">
+                                    <p class="serviceSlick__title">フィットネス＆スパ ココカラ港南台<br>（徒歩11分・約820m）</p>
+                                    </div>
+                                </div>
+                                <div class="serviceSlick__item">
+                                    <div class="image__cap"><img src="./imgs/lesson-06.jpg" width="264" height="197" loading="lazy" alt="スポーツクラブ ルネサンス 港南台（徒歩11分・約870m）">
+                                    <p class="serviceSlick__title">スポーツクラブ ルネサンス 港南台<br>（徒歩11分・約870m）</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box__secon content bg--brownlight">
+                            <div class="boxSecon__left">
+                                <h4 class="boxSecon__title">9つの塾が開設し、
+                                    <br>さまざまな習い事も揃う「港南台214ビル」。
+                                </h4>
+                                <div class="build">
+                                    <div class="box__build">
+                                        <div class="boxBuild__border"><p>塾<br><span>CRAM SCHOOL
+                                            </span></p>
+                                        </div>
+                                        <div class="boxBuild__content">
+                                            <p class="text--indent"><span><span class="dots">●</span>啓明館</span><span><span class="dots">●</span>高校受験ステップ</span><span><span class="dots">●</span>日能研</span><span><span class="dots">●</span>栄光ゼミナール</span></p>
+                                            
+                                            <p class="text--indent"><span><span class="dots">●</span>東京個別指導学院</span><span><span class="dots">●</span>MSG東進衛星予備校</span><span><span class="dots">●</span>河合塾マナビス</span></p>
+    
+                                            <p class="text--indent"><span><span class="dots">●</span>湘南ゼミナール高等部</span><span><span class="dots">●</span>中萬学院・さなる個別@willCGP</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="box__build">
+                                        <div class="boxBuild__border"><p>習い事<br><span>LESSON
+                                            </span></p>
+                                        </div>
+                                        <div class="boxBuild__content">
+                                            <p class="text--indent"><span><span class="dots">●</span>港南台ミュージックセンター（ヤマハ音楽教室、ヤマハ英語教室など）</span></p>
+                                            <p class="text--indent"><span><span class="dots">●</span>バーズカルチャーセンター</span><span><span class="dots">●</span>シェーン英会話</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxSecon__right">
+                                <div class="image__cap">
+                                    <img src="./imgs/lesson-building.jpg" alt="image photo" width="467" height="269" loading="lazy">
+                                    <p class="photo__capIn capIn--left" data-color="sdw-wh">image photo</p>
+                                </div>
+                            </div>
+                            <div class="boxSecon__title--vertical">KONANDAI 214 BUILDING</div>
                         </div>
                     </div>
                 </div>
