@@ -123,12 +123,13 @@
     }
     /* swipe */
     .station__swipe{
-        overflow-x: scroll;
+        overflow-x: auto;
     }
     .station__swipe img{
-        max-width: 150%;
-        width: auto;
+        max-width: inherit;
     }
+    /* .js-scroll__map{overflow-x: auto; padding-bottom: 10px;}
+    .js-scroll__map img{max-width: inherit;} */
     /* swipe */
 }
 @media screen and (max-width: 668px) {

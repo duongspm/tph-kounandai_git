@@ -50,14 +50,18 @@
         margin-right: 0;
     }
 }
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px){
     .planBtn li {
         max-width: 100%;
         width: 100%;
         margin-bottom: 20px;
         margin-right: 0;
+        text-align: center;
     }
+}
+
+@media screen and (max-width: 375px) {
+    
     #floor {
         margin-top: 25px;
     }
@@ -102,9 +106,7 @@
     padding: 0;
     position: relative;
 }
-.group__img figure img{
-    width: 100%;
-}
+
 .group__img figure .photo__capIn{
     left: 5px;
     right: unset;
@@ -124,6 +126,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 .btn__viewmore{
     text-align: center;
@@ -157,7 +160,7 @@
 }
 @media screen and (max-width: 767px) {
     .stogare{
-        margin: 70px 0;
+        margin: 50px 0;
         padding: 25px 15px;
     }
     .stogare__flex{
@@ -173,6 +176,9 @@
     }
     .stogare__viewmore{
         margin-top: 25px;
+    }
+    .group__img figure img{
+        width: 100%;
     }
 }
 
@@ -220,14 +226,19 @@
 .equipment-item-desc{
     font-size: 12px;
     line-height: 2;
-    margin-bottom: 10px;
+}
+.equipment-item-cap{
+    margin-top: 10px;
+    font-size: 10px;
+    text-indent: -1em;
+    padding-left: 1em;
 }
 .fz--10{
     font-size: 10px;
 }
 .text--indent{
-    padding-left: 1em;
     text-indent: -1em;
+    padding-left: 1em;
 }
 .equipment__item{
     width: 22.99%;
@@ -261,7 +272,7 @@
 @media screen and (max-width: 375px) {
     .equipment__item{
         width: 100%;
-        margin: 0 0 20px 0;
+        margin: 0 0 30px 0;
     }
     .equipment__img .photo__capIn{
         left: unset;

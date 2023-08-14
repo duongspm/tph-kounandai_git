@@ -80,6 +80,7 @@
 }
 
 .typeItem__note {
+    margin-top: 25px;
     font-size: 10px;
 }
 
@@ -150,7 +151,7 @@
         margin-bottom: 15px;
     }
     .typeBox{
-        padding-bottom: 86px;
+        padding: 86px 0;
     }
     .typeItem {
         border: 1px solid #00b795;
@@ -189,6 +190,9 @@
     .typeHead__middle {
         margin-right: 20px;
         margin-left: 40px;
+    }
+    .typeItem__note {
+        margin-top: 20px;
     }
 }
 
