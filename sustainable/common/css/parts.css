@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/* --------------------------------------------------
+headline
+---------------------------------------------------*/
+.headline{
+}
+/*headline02*/
+.headline.headline--02 {
+	font-size: 20px;
+	text-align: center;
+}
+
+.headline + .text {
+	font-size: 14px;
+	color: #ccc;
+	line-height: 2;
+}
+@media only screen and (max-width: 768px){
+	.headline{
+		line-height: 1.5;
+	}
+	/*headline02*/
+	.headline.headline--02 {
+	}
+	.headline + .text {
+		font-size: 12px;
+	}
+}
+
+
+/* --------------------------------------------------
+共通要素
+---------------------------------------------------*/
+/*text*/
+.text {
+	font-size: 14px;
+	text-align:justify;
+	line-height: 2;	
+}
+@media only screen and (max-width: 768px){
+	.text {
+		font-size: 12px;
+		line-height: 1.75;
+	}	
+}
+
+
+/*--- imagespzoom ---------------*/
+@media only screen and (max-width: 768px){ 
+	.image.image--spzoom {
+		width: 100%;
+		position: relative;
+	}
+}
+
+

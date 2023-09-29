@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+#gHeader .shldrTxt,
+#gHeader .ci,
+#gHeader .hdrMenu .menu,
+#hNav,
+#gNav {
+  display: none;
+}
+#gHeader .headline--01 {
+  margin: 0 auto;
+}
+
+
+
+.wrap {
+	max-width: 650px;
+}
+@media only screen and (max-width: 736px){
+	#gHeader .wrap {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+#mainContents {
+	padding: 40px 0;
+}
+#mainContents .ttl {
+	margin: 0 0 40px;
+	color: #c1b58f;
+	font-size: 18px;
+	line-height: 1;
+	text-align: center;
+}
+#mainContents ul {
+	margin: 40px 0 0;
+	font-size: 12px;
+	text-align: center;
+}
+#mainContents .print a {
+	display: inline-block;
+	width: 116px;
+	margin: 0 0 40px;
+	background: #4a4a4a;
+	line-height: 30px;
+	text-align: center;
+}
+#mainContents .close a {
+	display: inline-block;
+	line-height: 1;
+}
+#mainContents .close a::before {
+	content: '×';
+	margin: 0 1em 0 0;
+}
+
+@media only screen and (max-width: 736px){
+	#mainContents {
+		padding: 20px 0;
+	}
+	#mainContents .ttl {
+		margin: 0 0 20px;
+		font-size: 16px;
+	}
+	#mainContents ul {
+		margin: 20px 0 0;
+	}
+	#mainContents .print {
+		display: none;
+	}
+}
+
+#gFooter {
+	padding: 20px 0;
+}
+@media only screen and (max-width: 736px){
+	#gFooter .ci {
+		text-align: center;
+	}
+	#copyright {
+		margin: 10px 0 0;
+		padding: 0;
+	}
+}
+@media only print {
+	#gHeader,
+	#mainContents ul,
+	#gFooter {
+		display: none;
+	}
+	#mainContents {
+		padding: 0;
+		background: transparent;
+	}
+	#mainContents .ttl {
+		color: #000;
+	}
+}
+
+.btnGmap {
+	margin-top: 20px;
+ 	text-align: center;
+}
+.pop-gHeader {
+    margin: 0 0 6px;
+}
+
+
+
+
